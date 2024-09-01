@@ -145,7 +145,7 @@ const server = http.createServer((r, res) => {
       console.log('Method:', req.method);
       console.log('Headers:', req.headers);
       console.log('Body:', requestBody || null);
-      console.log('Proxying to:', targetUrl);
+      console.log('\nProxying to:', targetUrl);
       
       generateCurlCommand({
         method: req.method,
