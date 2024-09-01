@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "cli-color": "^2.0.4",
     "http": "^0.0.1-security",
     "http-proxy": "^1.18.1"
   }

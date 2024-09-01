@@ -1,3 +1,5 @@
+import clc from "cli-color";
+
 // Function to generate a curl command from an HTTP request
 export const generateCurlCommand = (req) => {
   // Escape special characters in headers and body for proper shell usage
@@ -28,5 +30,5 @@ export const generateCurlCommand = (req) => {
 
   console.log('');
   console.log('CURL command:');
-  console.log(curlCommand);
+  console.log(clc.blue(curlCommand));
 };
