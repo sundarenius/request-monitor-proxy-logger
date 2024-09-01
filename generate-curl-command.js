@@ -26,6 +26,7 @@ export const generateCurlCommand = (req) => {
     curlCommand += ` -d '${escapeShellString(body)}'`;
   }
 
+  console.log('');
   console.log('CURL command:');
   console.log(curlCommand);
 };
